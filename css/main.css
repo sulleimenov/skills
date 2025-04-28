@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-size: 16px;
+	font-family: "Roboto", sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+section {
+	padding: 50px 0;
+}
+
+section:nth-child(even) {
+	background-color: #bed5e3;
+}
+
+.container {
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.button {
+	padding: 16px 32px;
+	background-color: #1dadf4;
+	font-weight: 700;
+	text-align: center;
+	color: #fff;
+	border-radius: 7px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	width: fit-content;
+}
+
+/* header */
+.header {
+	padding: 20px 0;
+	/* background-color: #1f2289; */
+	color: #fff;
+}
+
+.header__inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__logo {
+	display: block;
+	gap: 20px;
+}
+
+.header__logo img {
+	max-width: 30px;
+}
+
+.header__rigth {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.header__dropdown {
+	display: flex;
+	flex-direction: column;
+	align-items: space-between;
+	gap: 9px;
+	width: 30px;
+	position: relative;
+	cursor: pointer;
+}
+
+.header__dropdown span {
+	width: 30px;
+	height: 2px;
+	background-color: #000;
+	display: block;
+}
+
+/* welcome */
+.welcome {
+	text-align: center;
+	background-color: #1f2289!important;
+	color: #fff;
+	padding-top: 10px;
+}
+.subtitle {
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+/* programs */
+.tabs__item.active {
+	background-color: #ddd;
+}
+
+.tabs-content__item {
+	display: none;
+}
+
+.tabs-content__item.active {
+	display: block;
+}
+.tabs-content {
+	margin-bottom: 40px;
+}
+.tabs {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	margin-bottom: 30px;
+}
+.tabs__item {
+	cursor: pointer;
+	background-color: #ffffff;
+	padding: 10px 14px;
+	border-radius: 7px;
+}
+.schedule {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.event {
+	background-color: #ffffff;
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.time {
+	font-weight: bold;
+	color: #2c3e50;
+	margin-bottom: 5px;
+}
+.title {
+	font-size: 1.1em;
+	margin-bottom: 5px;
+}
+.location {
+	font-size: 0.9em;
+	color: #7f8c8d;
+}
