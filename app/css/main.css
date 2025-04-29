@@ -34,6 +34,7 @@ a {
 }
 section {
 	padding: 50px 0;
+	position: relative;
 }
 
 section:nth-child(even) {
@@ -146,7 +147,7 @@ section:nth-child(even) {
 	text-align: center;
 	background-color: var(--accent-color)!important;
 	color: #fff;
-	padding-top: 10px;
+	padding-top: 30px;
 }
 
 /* programs */
@@ -194,7 +195,7 @@ section:nth-child(even) {
 	color: var(--accent-color);
 }
 .title {
-	font-size: 1.1em;
+	font-size: 1.5em;
 	margin-bottom: 5px;
 }
 .location {
@@ -277,4 +278,111 @@ section:nth-child(even) {
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
+}
+
+/* animation */
+@keyframes float {
+	0%, 100% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+}
+
+@keyframes spin {
+	0% {
+		rotate: 0deg;
+	}
+	100% {
+		rotate: 360deg;
+	}
+}
+
+@keyframes pulseMedal {
+	0%, 100% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+}
+@keyframes pulseMedal-1 {
+	0%, 100% {
+		transform: scale(1);
+		transform: rotate(25deg);
+	}
+	50% {
+		transform: scale(1.1);
+		transform: rotate(-25deg)
+	}
+}
+@keyframes pulseMedal-2 {
+	0%, 100% {
+		transform: scale(1);
+		transform: rotate(5deg);
+	}
+	50% {
+		transform: scale(1.1);
+		transform: rotate(-5deg)
+	}
+}
+
+@keyframes rotateMedal {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* decor */
+.decor {
+	position: absolute;
+	width: 60px;
+	transition: all 0.2s ease;
+	z-index: 5;
+}
+
+.decor.decor-1 {
+	animation: pulseMedal-1 7s ease-in-out infinite;
+	top: 65px;
+	width: 45px;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+}
+.decor.decor-2 {
+	animation: pulseMedal-2 2s ease-in-out infinite;
+	top: 20px;
+	left: 20px;
+}
+.decor.decor-3 {
+	animation: float 2s ease-in-out infinite;
+	top: -25px;
+	right: 40px;
+}
+.decor.decor-4 {
+	animation: float 2s ease-in-out infinite;
+	top: 40px;
+	left: 90px;
+	width: 40px;
+}
+.decor.decor-5 {
+	animation: float 2s ease-in-out infinite;
+	top: 30px;
+	right: 50px;
+}
+.decor.decor-6 {
+	animation: float 4s ease-in-out infinite;
+	top: -25px;
+	left: 40px;
+}
+.decor.decor-7 {
+	animation: float 4s ease-in-out infinite;
+	top: -15px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 }
