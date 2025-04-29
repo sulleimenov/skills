@@ -5,8 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
 	/>
-	<link rel="stylesheet" href="./css/app.min.css">
-	<!-- <link rel="stylesheet" href="./css/main.css"> -->
+	<!-- <link rel="stylesheet" href="./css/app.min.css"> -->
+	<link rel="stylesheet" href="./css/main.css">
 	<title>Республиканского конкурса профессионального мастерства среди педагогов организаций технического и профессионального, послесреднего образования по отрасли спорта</title>
 </head>
 <body>
@@ -29,11 +29,19 @@
 						<span></span>
 						<span></span>
 					</div>
+					<nav class="menu">
+						<a href="#welcome" class="menu__link">О конкурсе</a>
+						<a href="#schedule" class="menu__link">Программа конкурса</a>
+						<a href="#participants" class="menu__link">Участники</a>
+						<a href="#experts" class="menu__link">Эксперты</a>
+						<a href="#master-class" class="menu__link">Мастер-класс</a>
+						<a href="#feedback" class="menu__link">Обратная связь</a>
+					</nav>
 				</div>
 			</div>
 		</div>
 	</header>
-	<section class="welcome">
+	<section class="welcome" id="welcome">
 		<div class="container">
 			<h2 class="title">Уважаемые участники конкурса!</h2>
 			<p>Примите самые тёплые и искренние слова приветствия!</p>
@@ -48,7 +56,7 @@
 			<a href="Положение_каз_и_рус_спорт.pdf" data-fancybox class="button">Смотреть положение</a>
 		</div>
 	</section>
-	<section class="programs">
+	<section class="programs" id="schedule">
 		<div class="container">
 			<div class="subtitle">Программа конкурса</div>
 			<div class="tabs">
@@ -133,7 +141,7 @@
 			<a href="программа-рус.docx" download class="button">Скачать программу</a>
 		</div>
 	</section>
-	<section class="participants">
+	<section class="participants" id="participants">
 		<div class="container">
 			<div class="participants__inner">
 				<div class="subtitle">Участники</div>
@@ -169,7 +177,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="experts">
+	<section class="experts" id="experts">
 		<div class="container">
 			<div class="experts__inner">
 				<div class="subtitle">Эксперты</div>
@@ -211,7 +219,7 @@
 		</div>
 	</section>
 
-	<section class="master-class">
+	<section class="master-class" id="master-class">
 		<div class="container">
 			<div class="master-class__inner">
 				<div class="subtitle">Мастер-класс</div>
@@ -266,7 +274,7 @@
 		</div>
 	</section>
 
-	<section class="feedback">
+	<section class="feedback" id="feedback">
 		<div class="container">
 			<div class="feedback__inner">
 				<div class="subtitle">Обратная связь</div>
@@ -285,7 +293,7 @@
 		// Your custom options
 		});
 	</script>
-	<script src="./js/app.min.js"></script>
-	<!-- <script src="./js/main.js"></script> -->
+	<!-- <script src="./js/app.min.js"></script> -->
+	<script src="./js/main.js"></script>
 </body>
 </html>
