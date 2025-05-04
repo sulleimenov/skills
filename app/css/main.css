@@ -114,6 +114,7 @@ section:nth-child(even) {
 	opacity: 0;
 	visibility: hidden;
 	transition: all 0.2s ease;
+	z-index: 50;
 }
 
 .menu.active {
